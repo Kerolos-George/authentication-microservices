@@ -1,0 +1,27 @@
+{
+  "name": "auth-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:user": "cd services/user-service && npm run build && node dist/services/user-service/src/main.js",
+    "start:auth": "cd services/auth-service && npm run build && node dist/services/auth-service/src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/jwt": "^11.0.0",
+    "@prisma/client": "^6.13.0",
+    "axios": "^1.11.0",
+    "express": "^5.1.0",
+    "prisma": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "typescript": "^5.9.2"
+  }
+}
