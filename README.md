@@ -57,6 +57,13 @@ auth-task/
 2. Install dependencies:
    ```
    npm install
+
+   cd  services/auth-service
+   npm install
+   cd ../../
+   cd services/user-service
+   npm install
+     
    ```
 
 3. Set up environment variables:
@@ -77,7 +84,7 @@ auth-task/
 
 4. Run Prisma migrations:
    ```
-   npx prisma migrate dev
+   npx prisma generate 
    ```
 
 ## Running the Application
